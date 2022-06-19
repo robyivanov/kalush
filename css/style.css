@@ -1,0 +1,51 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#pano{
+    width: 50px;
+    height: 50px;
+    background-image: url("/img/pano.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+    
+#putin{
+    width: 20px;
+    height: 40px;
+    background-image: url(/img/putin.png);
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: viviMov 1s infinite linear;
+}
+@keyframes viviMov{
+    0% {
+        left: 580px;
+    }
+    100%{ 
+        top: -20px;
+    }
+}
+.jump{
+    animation: jumP 1s linear; 
+}
+@keyframes jumP {
+    0%{
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    30% {
+        top: 80px;
+    }
+    100% {
+        top: 150px
+    }
+    
+}
